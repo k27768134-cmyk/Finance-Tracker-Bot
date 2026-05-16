@@ -42,41 +42,6 @@ finance_bot/
         └── categories.py   # Категории
 ```
 
-## ⚙️ Установка и запуск
-
-### 1. Установи зависимости
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Создай файл `.env`
-
-Скопируй `.env.example` → `.env` и заполни:
-
-```
-BOT_TOKEN=твой_токен_от_botfather
-API_BASE_URL=http://localhost:8000
-```
-
-Токен получи у [@BotFather](https://t.me/BotFather) командой `/newbot`.
-
-### 3. Запусти FastAPI сервер
-
-```bash
-cd api
-uvicorn main:app --reload --port 8000
-```
-
-API будет доступно на `http://localhost:8000`  
-Документация Swagger: `http://localhost:8000/docs`
-
-### 4. Запусти бота (в другом терминале)
-
-```bash
-cd ..
-python bot.py
-```
 
 ## 📡 API эндпоинты
 
